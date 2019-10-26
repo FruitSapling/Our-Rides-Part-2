@@ -13,6 +13,7 @@ A jar can be compiled by, in a console, navigating to the project folder (/OurRi
 
 The output jar is located at OurRides/target/demo-0.0.1-SNAPSHOT.jar.
 
+The API can be started by running:
 `java -jar demo-0.0.1-SNAPSHOT.jar`
 
 Then the API can be accessed, for example, at:
