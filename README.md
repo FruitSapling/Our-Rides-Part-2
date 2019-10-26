@@ -1,10 +1,7 @@
 # Willem van Gerwen BookingGo Technical Test Submission
 
 ## Setup
-```
 This project is a Spring-Boot application, with Jackson as a dependency (via pom.xml, not an external jar like in part 1).
-
-```
 
 ## Part 1
 
