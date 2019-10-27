@@ -55,7 +55,6 @@ public class Part1 {
         con.disconnect();
 
       } catch (java.io.IOException IOException) {
-        //TODO: handle this
         System.out.println("The API request for " + supplier + " failed. The supplier API may be broken.");
         return null;
       }
@@ -89,7 +88,8 @@ public class Part1 {
       try {
         rideOptionWithSupplier = objectMapper.readValue(JSONResponse, RideOptionWithSupplier.class);
       } catch(Exception e) {
-        e.printStackTrace();
+        System.out.println("Failed while parsing JSON response from API.");
+        System.exit(0);
       }
 
         for (RideOption r: rideOptionWithSupplier.options) {
@@ -132,10 +132,6 @@ public class Part1 {
 
 
   public static void main(String[] args) {
-
-    for (String s: args) {
-      System.out.println(s);
-    }
 
     try {
       String suppliersToCheck = args[0];
